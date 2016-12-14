@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background: #ececec;
+        }
+        nav {
+            background: #333;
+            color: #ececec;
+            padding: 12px;
+        }
+
+        nav p {
+            margin: 0;
+        }
+
+        #class-colours, #rarity-colours
+        {
+            float: left;
+            min-height: 60vh;
+        }
+
+        #class-colours {
+            width: 80%;
+        }
+
+        #rarity-colours {
+            width: 20%;
+        }
+
+        #class-colours .color {
+            width: 25%;
+            min-height: ;
+            height: 20vh;
+            box-sizing: border-box;
+            border: 1px solid #ececec;
+        }
+
+        #rarity-colours .color {
+            width: 100%;
+            height: 10vh;
+        }
+
+        .class, .rarity {
+            color: #ececec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .color {
+            float: left;
+            font-size: 2em;
+        }
+
+        /* Classes */
+
+        .mage { background: #69CCF0; }
+        .priest { background: #FFFFFF; }
+        .warlock { background: #9482C9; }
+
+        .demon-hunter { background: #A330C9; }
+        .druid { background: #FF7D0A; }
+        .monk   { background: #00FF96; }
+        .rogue  { background: #FFF569; }
+
+        .hunter { background: #ABD473; }
+        .shaman { background: #0070DE; }
+
+        .warrior { background: #C79C6E; }
+        .death-knight { background: #C41F3B; }
+        .paladin { background: #F58CBA; }
+
+        /* Rarities */
+
+        .poor { background: #9d9d9d; }
+        .common { background: #FFFFFF; }
+        .uncommon { background: #1eff00; }
+        .rare { background: #0070dd; }
+        .epic { background: #a335ee; }
+        .legendary { background: #ff8000; }
+        .artifact { background: #e6cc80; }
+        .heirloom { background: #00ccff; }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <p>WoW UI Colors by TaskForceDev</p>
+    </nav>
+
+    <div id="class-colours">
+        <h1>Class Colours</h1>
+
+        <!-- Cloth Wearers -->
+
+        <div class="class mage color" data-clipboard-text="#69CCF0">
+            <div class="class-name">Mage</div>
+        </div>
+
+        <div class="class priest color" data-clipboard-text="#FFFFFF">
+            <div class="class-name">Priest</div>
+        </div>
+
+        <div class="class warlock color" data-clipboard-text="#9482C9">
+            <div class="class-name">Warlock</div>
+        </div>
+
+        <!-- Leather Wearers -->
+
+        <div class="class druid color" data-clipboard-text="#FF7D0A">
+            <div class="class-name">Druid</div>
+        </div>
+
+        <div class="class demon-hunter color" data-clipboard-text="#A330C9">
+            <div class="class-name">Demon Hunter</div>
+        </div>
+
+        <div class="class monk color" data-clipboard-text="#00FF96">
+            <div class="class-name">Monk</div>
+        </div>
+
+        <div class="class rogue color" data-clipboard-text="#FFF569">
+            <div class="class-name">Rogue</div>
+        </div>
+
+        <!-- Mail Wearers -->
+
+        <div class="class hunter color" data-clipboard-text="#ABD473">
+            <div class="class-name">Hunter</div>
+        </div>
+
+        <div class="class shaman color" data-clipboard-text="#0070DE">
+            <div class="class-name">Shaman</div>
+        </div>
+
+        <!-- Plate Wearers -->
+
+        <div class="class death-knight color" data-clipboard-text="#C41F3B">
+            <div class="class-name">Death Knight</div>
+        </div>
+
+        <div class="class paladin color" data-clipboard-text="#F58CBA">
+            <div class="class-name">Paladin</div>
+        </div>
+        
+        <div class="class warrior color" data-clipboard-text="#C79C6E">
+            <div class="class-name">Warrior</div>
+        </div>
+    </div>
+
+    <div id="rarity-colours">
+        <h1>Rarity Colours</h1>
+
+        <div class="rarity poor color" data-clipboard-text="#9d9d9d">Poor</div>
+
+        <div class="rarity common color" data-clipboard-text="#FFFFFF">Common</div>
+
+        <div class="rarity uncommon color" data-clipboard-text="#1eff00">Uncommon</div>
+
+        <div class="rarity rare color" data-clipboard-text="#0070dd">Rare</div>
+
+        <div class="rarity epic color" data-clipboard-text="#a335ee">Epic</div>
+
+        <div class="rarity artifact color" data-clipboard-text="#e6cc80">Artifact</div>
+
+        <div class="rarity legendary color" data-clipboard-text="#ff8000">Legendary</div>
+
+        <div class="rarity heirloom color" data-clipboard-text="#00ccff">Heirloom</div>
+    </div>
+
+<!-- Clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+<script>
+    new Clipboard('.color');
+</script>
+</body>
+</html>
